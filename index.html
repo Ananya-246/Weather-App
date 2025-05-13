@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Matters</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <i class="fa-solid fa-cloud-sun"></i>
+            <h2>  WEATHER TODAY</h2>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="   search city" class="search-bar" id="input">
+            <button><i class="fa-solid fa-magnifying-glass" id="btn"></i></button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="left-panel">
+            <h3 style="font-weight: lighter;"><pre>  NOW</pre></h3>
+            <div class="context1">
+                <div class="board">
+                    <h1 id="temp"></h1>
+                    <div>
+                        <img id="image1" src=""/>
+                    </div>
+                </div>
+                <hr/>
+                <p id="description"></p>
+                <p id="city-name"></p>
+            </div>
+            <hr/>
+            <div class="context2">
+                <h2 style="font-weight: lighter;">LAST 5 DAYS</h2>
+                    <div class="one">
+                        <p id="date2"></p>
+                        <p id="temp2"></p>
+                        <div>
+                            <span id="image2"></span>
+                        </div>
+                        <p id="condn2"></p>
+                    </div>
+                    <div class="one">
+                        <p id="date3"></p>
+                        <p id="temp3"></p>
+                        <div>
+                            <span id="image3"></span>
+                        </div>
+                        <p id="condn3"></p>
+                    </div>
+                    <div class="one">
+                        <p id="date4"></p>
+                        <p id="temp4"></p>
+                        <div>
+                            <span id="image4"></span>
+                        </div>
+                        <p id="condn4"></p>
+                    </div>
+                    <div class="one">
+                        <p id="date5"></p>
+                        <p id="temp5"></p>
+                        <div>
+                            <span id="image5"></span>
+                        </div>
+                        <p id="condn5"></p>
+                    </div>
+                    <div class="one">
+                        <p id="date6"></p>
+                        <p id="temp6"></p>
+                        <div>
+                            <span id="image6"></span>
+                        </div>
+                        <p id="condn6"></p>
+
+                    </div>
+            </div>
+        </div>
+        
+        <div class="right-panel">
+            <div class="box1">
+                <pre><h2> Today's Highlights </h2></pre>
+                <div class="top-level">
+                    <div class="wind cuboid">
+                        <h2 style="font-weight: lighter;">WIND   <i class="fa-solid fa-wind"></i></h2>
+                        <div class="text">
+                            <p id="degrees"></p>
+                            <p id="gust"></p>
+                            <p id="speed"></p>
+                        </div>
+                    </div>
+                    <div class="sun cuboid">
+                        <h2 style="font-weight: lighter;">SUNRISE & SUNSET</h2>
+                        <div class="topic">
+                            <div class="surya">
+                                <i class="fa-solid fa-sun"></i>
+                                <p id="sunr"></p>
+                            </div>
+                            <div class="surya">
+                                <i class="fa-solid fa-moon"></i>
+                                <p id="suns"></p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bottom-level">
+                    <div class="cube">
+                        <h3 style="font-weight: lighter;">HUMIDITY <i class="fa-solid fa-droplet"></i></h3>
+                        <p id="humidity"></p>
+                        
+                    </div>
+                    <div class="cube">
+                        <h3 style="font-weight: lighter;">PRESSURE <i class="fa-solid fa-water"></i></h3>
+                        <p id="pressure"></p>
+                    </div>
+                    <div class="cube">
+                        <h3 style="font-weight: lighter;">FEELS-LIKE <i class="fa-solid fa-temperature-low"></i></h3>
+                        <p id="feels"></p>
+
+                    </div>
+                </div>
+                
+            </div>
+            <div class="box2">
+                <h2><pre> Today At</pre></h2>
+                <div class="space">
+                    <div class="boxes">
+                        <p id="1"></p>
+                        <p id="hour-1"></p>
+                    </div>
+                    <div class="boxes">
+                        <p id="2"></p>
+                        <p id="hour-2"></p>
+                    </div>
+                    <div class="boxes">
+                        <p id="3"></p>
+                        <p id="hour-3"></p>
+                    </div>
+                    <div class="boxes">
+                        <p id="4"></p>
+                        <p id="hour-4"></p>
+                    </div>
+                    <div class="boxes">
+                        <p id="5"></p>
+                        <p id="hour-5"></p>
+                    </div>
+                </div>
+                
+            </div>
+    
+        </div>
+    </div>
+    
+</body>
+<script src="script.js"></script>
+</html>
